@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background: #1a1a1a;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    z-index: 10;
+}
+#header p:first-child{
+    position: fixed;
+    margin: 1vw;
+    font-size: 3vw;
+    color: #f2ac20;
+    font-family: 'Pacifico', cursive;
+}
+#header span{
+    position: fixed;
+    top: -1.8vh;
+    font-size: 3vw;
+    left: 89vw;
+    color: #4265d6;
+    transition: 0.3s;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+}
+#header span:hover{
+    color: #3fc495;
+}
+
+
+
+
+#main{
+    position: fixed;
+    top: 8vh;
+    background: rgb(32, 32, 32);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    overflow-y: scroll;
+}
+#main .note{
+    position: relative;
+    top: 0;
+    margin: 0.5vw 0 0.5vw 0;
+    width: 70vw;
+    height: 6vh;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    z-index:10 ;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+}
+#main .note #note-title{
+    position: absolute;
+    top: 0;
+    left: 4vw;
+    width: 60vw;
+    height: 4vh;
+    margin: 1vh; 
+    outline: none;
+    padding: 10px;
+    border: none;   
+    font-size: 18px;   
+}
+#main .note #note-content{
+    position: absolute;
+    top: 6.5vh;
+    left: 0vw;
+    width: 70vw;
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    overflow-y: scroll;
+}
+#main .note #expand-note{
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .note #expand-note:hover{
+    color: #F8C471;
+}
+#main .note #delete-note{
+    position: absolute;
+    top: 1vh;
+    left: 66vw;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .note #delete-note:hover{
+    color: #F8C471;
+}
+#main h3{
+    position: absolute;
+    top: 2.5vh;
+    left: 20vw;
+    font-size: 3vw;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #eff4f7; 
+    /* border-radius: 10px; */
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #0097DE; 
+}
