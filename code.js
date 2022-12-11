@@ -59,3 +59,4 @@ if (localStorage.length>0) {
 }
 NoteHTML = `<i class="fa-solid fa-expand" id="expand-note"></i><i class="fa-solid fa-trash" id="delete-note"></i><input type="text" id="note-title" placeholder="Title here"><textarea id="note-content" placeholder="Add Notes here" cols="30" rows="10"></textarea>`;
 NewNote.addEventListener("click", AddingNote);
+
